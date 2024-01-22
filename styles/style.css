@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.Hero-cotainer{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(255, 251, 37);
+}
+
+.AboutMe-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+.AboutMe-presentation {
+    border-bottom: 1px solid black;
+}
+
+.AboutMe-presentation h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.AboutMe-presentation h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.AboutMe-presentation h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.AboutMe-resume p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.profileImg-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+.profileImg-container img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    overflow: hidden;
+}
