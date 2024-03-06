@@ -1,65 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Hiding scroll bar */
+body::-webkit-scrollbar {
+  display: none;
+}
+.Hero-container {
+  width: 100%;
+  height: 100vh;
 
-body{
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  background: linear-gradient(270deg, #28a183, #1f0085, #112451, #b73380);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
 
-.Hero-cotainer{
-    width: 100%;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(255, 251, 37);
+.Hero-container h1 {
+  margin: 0;
+  width: 45%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 
-.AboutMe-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 10px;
-    padding-left: 50px;
+mark.white {
+  color: white;
+  background: none;
 }
 
-.AboutMe-presentation {
-    border-bottom: 1px solid black;
+.button {
+  width: 25%;
+  margin-top: 60px;
+  border-radius: 220px;
+}
+.button p {
+  margin: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
-.AboutMe-presentation h1{
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-.AboutMe-presentation h2{
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.AboutMe-presentation h3{
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-top: 10px;
+.About-container {
+  width: 100%;
 }
 
-.AboutMe-resume p{
-    font-size: 1.4rem;
-    font-weight: 400;
+.About-container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.profileImg-container{
+.abilities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 200px;
+  justify-content: space-around;
 }
-.profileImg-container img{
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    overflow: hidden;
+
+.hexagon {
+  width: 150px;
+  height: 170px;
+}
+
+.hexagon h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.hexagon p {
+  color: #534f4f;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+
+  margin-top: 10px;
+}
+
+.shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ff304f;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.shape img {
+  width: 50%;
+}
+
+.abilities .hexagon:nth-child(3) img {
+  width: 40%;
+}
+
+.info {
+  width: 100%;
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.introHexagon {
+  width: 320px;
+  height: 350px;
+}
+
+.introShape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ff304f;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.introShape img {
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.introduction p {
+  width: 50%;
+  color: #534f4f;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+
+  margin-top: 10px;
+}
+
+mark.blue {
+  color: #1f92b7;
+  background: none;
+}
+
+.skills {
+  width: 90%;
+}
+
+canvas {
+  height: 514px;
+  width: 90%;
+  outline: none;
+}
+
+.percentage:after {
+  content: "";
+  display: block;
+  background-color: #3d9970; /* Green color */
+}
+
+.percentage-20:after {
+  width: 20%;
+}
+
+.percentage-30:after {
+  width: 30%;
+}
+/* ... and so on for other data points */
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
