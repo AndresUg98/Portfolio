@@ -52,6 +52,7 @@ mark.white {
 
 .About-container {
   width: 100%;
+  height: 1200px;
 }
 
 .About-container h2 {
@@ -184,20 +185,19 @@ canvas {
   outline: none;
 }
 
-.percentage:after {
-  content: "";
-  display: block;
-  background-color: #3d9970; /* Green color */
+.projects-container {
+  width: 100%;
+  height: 400px;
+
+  background-color: #d9d9d9;
 }
 
-.percentage-20:after {
-  width: 20%;
+.projects-container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
-
-.percentage-30:after {
-  width: 30%;
-}
-/* ... and so on for other data points */
 
 @-webkit-keyframes AnimationName {
   0% {
