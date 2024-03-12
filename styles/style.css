@@ -337,6 +337,30 @@ mark.white {
   overflow: hidden;
 }
 
+.social-media{
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 35%;
+  justify-content: space-around;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.icon{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+ 
+}
+
+.icon img{
+  width: 100%;
+}
+
+
+
 .introduction p {
   width: 50%;
   color: #534f4f;
