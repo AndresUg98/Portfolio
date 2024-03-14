@@ -15,13 +15,6 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   background-color: black;
-
-  /* background: linear-gradient(270deg, #28a183, #1f0085, #112451, #b73380);
-  background-size: 800% 800%;
-
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite; */
 }
 
 .backgroud-container {
@@ -246,14 +239,13 @@ mark.white {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   width: 100%;
-  height: 450px;
-
   justify-content: space-around;
+
+  margin-bottom: 65px;
 }
 
-.atribute{
+.atribute {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,10 +335,10 @@ mark.white {
   overflow: hidden;
 }
 
-.social-media{
+.social-media {
   display: flex;
   flex-wrap: wrap;
-  
+
   width: 35%;
   justify-content: space-around;
 
@@ -354,18 +346,15 @@ mark.white {
   margin-bottom: 16px;
 }
 
-.icon{
+.icon {
   width: 45px;
   height: 45px;
   border-radius: 50%;
- 
 }
 
-.icon img{
+.icon img {
   width: 100%;
 }
-
-
 
 .introduction p {
   width: 50%;
@@ -398,10 +387,11 @@ canvas {
 .projects-container {
   width: 100%;
   background-color: #d9d9d9;
+  padding-bottom: 65px;
 }
-
 .projects-container h2 {
   margin-top: 0;
+
   padding-top: 50px;
   font-size: 3rem;
   font-weight: 700;
@@ -411,7 +401,6 @@ canvas {
 
 .projects {
   width: 100%;
-  height: 550px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -465,8 +454,181 @@ canvas {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Hero-container h1 {
+    width: 90%;
+    font-size: 2rem;
+  }
 
-@media screen and (max-width: 321px) {
+  .button {
+    width: 60%;
+    margin-top: 60px;
+    border-radius: 220px;
+    z-index: 1;
+  }
+  .button p {
+    margin: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .About-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .abilities {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 80px;
+  }
+
+  .atribute h4 {
+    font-size: 1.5rem;
+  }
+
+  .atribute p {
+    font-size: 1.2rem;
+  }
+
+  .hexagon {
+    width: 110px;
+    height: 120px;
+  }
+
+  .introHexagon {
+    width: 220px;
+    height: 250px;
+  }
+
+  .info {
+    margin-top: 65px;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .introduction p {
+    width: 70%;
+    color: #534f4f;
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .project {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .Hero-container h1 {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 60%;
+    margin-top: 60px;
+    border-radius: 220px;
+    z-index: 1;
+  }
+  .button p {
+    margin: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .About-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .abilities {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    height: 650px;
+    margin-bottom: 80px;
+  }
+
+  .atribute h4 {
+    font-size: 1.5rem;
+  }
+
+  .atribute p {
+    font-size: 1.2rem;
+  }
+
+  .hexagon {
+    width: 110px;
+    height: 120px;
+  }
+
+  .introHexagon {
+    width: 220px;
+    height: 250px;
+  }
+
+  .info {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .introduction p {
+    width: 70%;
+    color: #534f4f;
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .project {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 426px) {
   .Hero-container h1 {
     width: 90%;
     font-size: 1.5rem;
@@ -483,7 +645,7 @@ canvas {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .About-container {
@@ -504,7 +666,7 @@ canvas {
   .atribute h4 {
     font-size: 1rem;
   }
-  
+
   .atribute p {
     font-size: 0.9rem;
   }
@@ -527,32 +689,25 @@ canvas {
     grid-template-rows: 1fr 1fr;
   }
 
-  .icon{
+  .icon {
     width: 35px;
     height: 35px;
-
-   
   }
 
   .introduction p {
     width: 70%;
     color: #534f4f;
     font-size: 1.2rem;
-
   }
 
   .projects {
     width: 100%;
     display: flex;
     flex-direction: column;
-
   }
 
-
-
   .project {
-    width: 170px;
-    height: 170px;
-
+    width: 270px;
+    height: 270px;
   }
 }
