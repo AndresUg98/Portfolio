@@ -458,3 +458,36 @@ canvas {
     background-position: 0% 50%;
   }
 }
+
+
+@media screen and (max-width: 321px) {
+  .Hero-container h1 {
+
+    font-size: 1.5rem;
+
+  }
+
+  .button {
+    width: 50%;
+    margin-top: 60px;
+    border-radius: 220px;
+    z-index: 1;
+  }
+  .button p {
+    margin: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .hexagon {
+    width: 80px;
+    height: 100px;
+}
+
+  .introHexagon {
+    width: 220px;
+    height: 250px;
+}
+}
