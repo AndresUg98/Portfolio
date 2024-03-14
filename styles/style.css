@@ -253,12 +253,18 @@ mark.white {
   justify-content: space-around;
 }
 
+.atribute{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hexagon {
   width: 150px;
   height: 170px;
 }
 
-.hexagon h4 {
+.atribute h4 {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
@@ -268,7 +274,7 @@ mark.white {
   margin-bottom: 0;
 }
 
-.hexagon p {
+.atribute p {
   color: #534f4f;
   font-size: 1.3rem;
   font-weight: 400;
@@ -462,13 +468,12 @@ canvas {
 
 @media screen and (max-width: 321px) {
   .Hero-container h1 {
-
+    width: 90%;
     font-size: 1.5rem;
-
   }
 
   .button {
-    width: 50%;
+    width: 60%;
     margin-top: 60px;
     border-radius: 220px;
     z-index: 1;
@@ -478,16 +483,76 @@ canvas {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .About-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .abilities {
+    flex-direction: column;
+    width: 90%;
+    height: 650px;
+    margin-bottom: 80px;
+  }
+
+  .atribute h4 {
+    font-size: 1rem;
+  }
+  
+  .atribute p {
     font-size: 0.9rem;
   }
 
   .hexagon {
     width: 80px;
     height: 100px;
-}
+  }
 
   .introHexagon {
     width: 220px;
     height: 250px;
-}
+  }
+
+  .info {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .icon{
+    width: 35px;
+    height: 35px;
+
+   
+  }
+
+  .introduction p {
+    width: 70%;
+    color: #534f4f;
+    font-size: 1.2rem;
+
+  }
+
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+
+  .project {
+    width: 170px;
+    height: 170px;
+
+  }
 }
