@@ -308,7 +308,6 @@ mark.white {
 
 .info {
   width: 100%;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -387,6 +386,7 @@ mark.blue {
   align-items: center;
   width: 90%;
   height: 60vh;
+  margin-bottom: 50px;
 }
 
 canvas {
