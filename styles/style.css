@@ -423,6 +423,11 @@ canvas {
   height: 337px;
   background-color: black;
   overflow: hidden;
+  transition: transform .2s
+}
+
+.project:hover {
+  transform: scale(1.2);
 }
 
 .project img {
